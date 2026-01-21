@@ -1,4 +1,4 @@
-import { test, expect, Locator } from '@playwright/test';
+import { test, expect, Page, Locator } from '@playwright/test';
 
 interface Elements {
   locator: (page: Page) => Locator;
