@@ -8,19 +8,15 @@ test.describe('Тесты главной страницы', () => {
     mainPage = new MainPage(page);
     await mainPage.openMainPage();
   });
-
   test('Проверка отображения элементов навигации хедера', async () => {
     await mainPage.checkElementsVisability();
   });
-
   test('Проверка названия элементов навигации хедера', async () => {
     await mainPage.checkElementsText();
   });
-
   test('Проверка атрибутов href элементов навигации хедера', async () => {
     await mainPage.checkElementsHrefAttribute();
   });
-
   test('Проверка переключения лайт мода', async () => {
     await test.step('Нажатие на иконку переключение лайт мода', async () => {
       await mainPage.clikSwitchLightModeIcon();
@@ -29,7 +25,6 @@ test.describe('Тесты главной страницы', () => {
       await mainPage.chekDataThemeAttributeValue();
     });    
   });
-
   test(`Проверка стилей со светлой темой`, async () => {
     await test.step('Установка светлой темы', async () => {
       await mainPage.setLightMode();
@@ -38,7 +33,6 @@ test.describe('Тесты главной страницы', () => {
       await mainPage.checkLayoutWithLightMode();
     });    
   });
-
   test(`Проверка стилей с темной темой`, async () => {
     await test.step('Установка темной темы', async () => {
       await mainPage.setDarkMode();
