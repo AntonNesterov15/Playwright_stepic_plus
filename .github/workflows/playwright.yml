@@ -25,3 +25,5 @@ jobs:
         name: playwright-report
         path: playwright-report/
         retention-days: 30
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
